@@ -5,11 +5,11 @@ describe('Bucketlist', () => {
     expect(new Bucketlist()).toBeTruthy();
   });
   it('should accept values in the constructor', () => {
-    let bucketlist = new Bucketlist({
+    let todo = new Bucketlist({
       title: 'hello';
       complete: true;
     });
-    expect(bucketlist.title).toEqual('hello');
-    expect(bucketlist.complete).toEqual(true);
+    expect(todo.title).toEqual('hello');
+    expect(todo.complete).toEqual(true);
   });
 });
